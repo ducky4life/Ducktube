@@ -12,7 +12,7 @@ make sure you have [python](https://www.python.org/downloads/) installed.
 
 1. clone the repository
    ```
-   git clone https://github.com/ducky4life/ducktube.git
+   git clone https://github.com/ducky4life/Ducktube.git
    ```
 2. move into directory
    ```

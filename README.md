@@ -98,5 +98,5 @@ amd64 packages are not tested since i only have an arm64 rasp pi with docker.
 ## to do list
 
 - [x] publish docker images for arm64 and amd64 to github container registry
-
 - [ ] download playlists
+- [ ] other file formats

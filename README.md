@@ -57,3 +57,9 @@ make sure you have [python](https://www.python.org/downloads/) installed.
    docker run -p 8080:8080 --name ducktube ducktube:latest
    ```
 6. go to http://localhost:8080/
+
+
+## to do list
+
+1. publish docker images for arm64 and amd64 to github container registry
+2. download playlists

@@ -38,6 +38,7 @@ def run():
 def keep_alive():
     server = Thread(target=run)
     server.start()
+    print("Ducktube is running on port 8080")
 
 @app.route('/downloads/<path:filename>')
 def download_file(filename):

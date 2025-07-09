@@ -1,0 +1,174 @@
+/* shamelessly stolen from my main website */
+
+/* #region variables */
+:root {
+  --main-color: #1a1f46;
+  --secondary-color: #b0ffff;
+  --tertiary-color: rgb(255, 217, 0);
+  --navbar-color: rgba(36, 50, 115);
+}
+
+/* #endregion */
+
+/* #region default */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia;
+  font-weight: normal;
+  text-wrap: wrap;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+*::selection {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+html,
+body a {
+  cursor: url("./images/favicon.ico"), auto;
+}
+
+a:link {
+  text-decoration-color: var(--secondary-color);
+  color: white;
+}
+
+a:visited {
+  text-decoration-color: var(--secondary-color);
+  color: white;
+}
+
+a:hover {
+  text-decoration-color: var(--tertiary-color);
+  transition: 0.5s;
+}
+
+a:active {
+  text-decoration-color: var(--tertiary-color);
+}
+
+body {
+  background: url("./images/background.jpg") no-repeat fixed;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: cover;
+  color: white;
+}
+
+p {
+  font-size: minmax(20px, 1fr);
+  padding: 10px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+nav {
+  padding-left: 2vw;
+}
+
+@media all and (orientation: portrait) {
+  nav {
+    padding-left: 4vw;
+  }
+}
+
+/* #endregion */
+
+/* #region nav bar */
+.navBar {
+  background-color: var(--navbar-color);
+  width: 100vw;
+  height: 10vh;
+  min-height: 90px;
+  position: fixed;
+  top: 0;
+  place-content: center;
+  z-index: 99;
+}
+
+.navText {
+  text-decoration: none;
+  flex-direction: row;
+  text-wrap: nowrap;
+  font-size: 32px;
+  max-width: 500px;
+}
+
+@media all and (orientation: portrait) {
+  .navText {
+    font-size: 5vw;
+  }
+}
+
+.navText:hover {
+  color: var(--tertiary-color);
+  transition: 0.5s;
+}
+
+/* #endregion */
+
+/* #region wrapper */
+.wrapper {
+  text-align: center;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+  align-items: center;
+}
+
+@media all and (orientation: portrait) {
+  .wrapper {
+    font-size: 3vw;
+  }
+}
+
+/* #endregion */
+
+/* #region button */
+.button {
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--main-color);
+  padding: 1vh 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.button:hover {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  transition: 0.2s;
+}
+
+.button3 {
+  font-size: min(1.5vw, 20px);
+}
+
+@media all and (orientation: portrait) {
+  .button3 {
+    font-size: 3vw;
+  }
+}
+
+/* #endregion */

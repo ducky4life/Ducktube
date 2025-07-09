@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <body>
+  <head>
+    <title>Ducky</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  
+  <div class="navBar">
+    <nav>
+      <a href="https://ducky.is-a.dev/" class="navText">Ducky</a>
+    </nav>
+  </div>
+  
+    <section class="wrapper">
+    <br />
+    
+      <form method="post">
+          <input style="height: 3vh; width: 50vw;" type="text" name="textbox" placeholder="Paste YouTube URL..." />
+          <br>
+          <input class="button button3" type="submit" name="action" value="Download Video" />
+          <input class="button button3" type="submit" name="action" value="Download Audio Only" />
+      </form>
+      <p>{{ message }}</p>
+      {% if filepath %}
+          <a href="/downloads/{{ filepath }}" download>Download</a>
+      {% endif %}
+
+    </body>
+  </section>
+</html>

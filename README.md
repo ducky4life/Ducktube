@@ -94,5 +94,6 @@ building from source is recommended since it is how i mainly test the packages. 
 
 ## to do list
 
-1. publish docker images for arm64 and amd64 to github container registry
-2. download playlists
+- [x] publish docker images for arm64 and amd64 to github container registry
+
+- [ ] download playlists

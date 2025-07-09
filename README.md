@@ -51,6 +51,7 @@ building from source is recommended since it is how i mainly test the packages. 
    docker pull ghcr.io/ducky4life/ducktube/ducktube-arm64:latest
    ```
 2. run the docker container
+
    amd64:
    ```
    docker run -p 8080:8080 --name ducktube ghcr.io/ducky4life/ducktube/ducktube-amd64:latest
@@ -59,7 +60,7 @@ building from source is recommended since it is how i mainly test the packages. 
    ```
    docker run -p 8080:8080 --name ducktube ghcr.io/ducky4life/ducktube/ducktube-arm64:latest
    ```
-2. go to http://localhost:8080/
+3. go to http://localhost:8080/
 
 ### Building the images from source (recommended)
 

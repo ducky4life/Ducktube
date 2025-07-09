@@ -18,14 +18,14 @@
     <br />
     
       <form method="post">
-          <input style="height: 3vh; width: 50vw;" type="text" name="textbox" placeholder="Paste YouTube URL..." />
+          <input class="textbox" type="text" name="textbox" placeholder="Paste YouTube URL..." />
           <br>
           <input class="button button3" type="submit" name="action" value="Download Video" />
           <input class="button button3" type="submit" name="action" value="Download Audio Only" />
       </form>
       <p>{{ message }}</p>
       {% if filepath %}
-          <a href="/downloads/{{ filepath }}" download>Download</a>
+          <a href="/downloads/{{ filepath }}" download><p>Download</p></a>
       {% endif %}
 
     </body>

@@ -26,23 +26,6 @@
   color: var(--main-color);
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--main-color);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--secondary-color);
-}
-
-html,
-body a {
-  cursor: url("./images/favicon.ico"), auto;
-}
-
 a:link {
   text-decoration-color: var(--secondary-color);
   color: white;
@@ -70,11 +53,37 @@ body {
   color: white;
 }
 
-p {
-  font-size: minmax(20px, 1fr);
-  padding: 10px;
-  font-weight: 300;
-  line-height: 150%;
+p{
+  font-size: min(1.5vw, 20px);
+  padding-top: 20px;
+}
+
+@media all and (orientation: portrait) {
+  p {
+    font-size: 3vw;
+  }
+}
+
+::placeholder {
+  padding-left: 10px;
+}
+
+@media all and (orientation: portrait) {
+  ::placeholder {
+    font-size: 3vw;
+  }
+}
+
+.textbox {
+  width: 50vw;
+  height: 5vh;
+}
+
+@media all and (orientation: portrait) {
+  .textbox {
+    width: 90vw;
+    height: 3vh;
+  }
 }
 
 nav {
@@ -153,6 +162,7 @@ nav {
   margin: 4px 2px;
   cursor: pointer;
   width: fit-content;
+  font-size: min(1.5vw, 20px);
 }
 
 .button:hover {
@@ -161,12 +171,8 @@ nav {
   transition: 0.2s;
 }
 
-.button3 {
-  font-size: min(1.5vw, 20px);
-}
-
 @media all and (orientation: portrait) {
-  .button3 {
+  .button {
     font-size: 3vw;
   }
 }

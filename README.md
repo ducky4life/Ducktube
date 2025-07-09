@@ -1,6 +1,6 @@
 # Ducktube - YouTube Web Downloader
 
-ducktube is a self-hosted flask YouTube web downloader for both video and audio using yt-dlp.
+ducktube is a self-hosted flask YouTube web downloader for both video and audio using yt-dlp with docker support.
 
 saved files are available by link and in /downloads on your server.
 
@@ -37,6 +37,8 @@ make sure you have [python](https://www.python.org/downloads/) installed.
 make sure you have [docker](https://www.docker.com) installed.
 
 ### Using pre-built images
+
+building from source is recommended since it is how i mainly test the packages. amd64 packages are not tested since i only have an arm64 rasp pi with docker.
 
 1. get the correct package for your archetecture
 

@@ -39,6 +39,7 @@ make sure you have [docker](https://www.docker.com) installed.
 ### Using pre-built images
 
 1. get the correct package for your archetecture
+
    [amd64](https://github.com/ducky4life/ducktube/pkgs/container/ducktube%2Fducktube-amd64):
    ```
    docker pull ghcr.io/ducky4life/ducktube/ducktube-amd64:latest

@@ -77,6 +77,7 @@ building from source is recommended since it is how i mainly test the packages. 
    mkdir downloads
    ```
 4. build the docker image for your archetecture
+
    amd64:
    ```
    docker build -t ducktube:latest -f amd64.Dockerfile .

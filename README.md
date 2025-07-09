@@ -36,9 +36,11 @@ make sure you have [python](https://www.python.org/downloads/) installed.
 
 make sure you have [docker](https://www.docker.com) installed.
 
-### Using pre-built images
+[building from source](https://github.com/ducky4life/Ducktube#building-the-images-from-source-recommended) is recommended since it is how i mainly test the packages and you get the most up to date dependencies.
 
-building from source is recommended since it is how i mainly test the packages. amd64 packages are not tested since i only have an arm64 rasp pi with docker.
+amd64 packages are not tested since i only have an arm64 rasp pi with docker.
+
+### Using pre-built images
 
 1. get the correct package for your archetecture
 

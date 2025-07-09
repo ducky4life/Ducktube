@@ -40,11 +40,11 @@ make sure you have [docker](https://www.docker.com) installed.
 
 1. get the correct package for your archetecture
 
-   [amd64](https://github.com/ducky4life/ducktube/pkgs/container/ducktube%2Fducktube-amd64):
+   [amd64](https://github.com/ducky4life/Ducktube/pkgs/container/ducktube%2Fducktube-amd64):
    ```
    docker pull ghcr.io/ducky4life/ducktube/ducktube-amd64:latest
    ```
-   [arm64](https://github.com/ducky4life/ducktube/pkgs/container/ducktube%2Fducktube-arm64):
+   [arm64](https://github.com/ducky4life/Ducktube/pkgs/container/ducktube%2Fducktube-arm64):
    ```
    docker pull ghcr.io/ducky4life/ducktube/ducktube-arm64:latest
    ```

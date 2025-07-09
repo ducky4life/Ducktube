@@ -33,8 +33,32 @@ make sure you have [python](https://www.python.org/downloads/) installed.
 6. go to http://localhost:8080/
 
 ## Usage (Docker)
-> [!IMPORTANT]
-> Note that you might have to delete `arm64v8/` from the first line of the Dockerfile: `FROM arm64v8/python:3.11-slim` if using another archetecture
+
+make sure you have [docker](https://www.docker.com) installed.
+
+### Using pre-built images
+
+1. get the correct package for your archetecture
+   [amd64](https://github.com/ducky4life/ducktube/pkgs/container/ducktube%2Fducktube-amd64):
+   ```
+   docker pull ghcr.io/ducky4life/ducktube/ducktube-amd64:latest
+   ```
+   [arm64](https://github.com/ducky4life/ducktube/pkgs/container/ducktube%2Fducktube-arm64):
+   ```
+   docker pull ghcr.io/ducky4life/ducktube/ducktube-arm64:latest
+   ```
+2. run the docker container
+   amd64:
+   ```
+   docker run -p 8080:8080 --name ducktube ghcr.io/ducky4life/ducktube/ducktube-amd64:latest
+   ```
+   arm64:
+   ```
+   docker run -p 8080:8080 --name ducktube ghcr.io/ducky4life/ducktube/ducktube-arm:latest
+   ```
+2. go to http://localhost:8080/
+
+### Building the images from source (recommended)
 
 1. clone the repository
    ```
@@ -48,9 +72,14 @@ make sure you have [python](https://www.python.org/downloads/) installed.
    ```
    mkdir downloads
    ```
-4. build the docker image
+4. build the docker image for your archetecture
+   amd64:
    ```
-   docker build -t ducktube:latest -f Dockerfile .
+   docker build -t ducktube:latest -f amd64.Dockerfile .
+   ```
+   arm64:
+   ```
+   docker build -t ducktube:latest -f arm64.Dockerfile .
    ```
 5. run the docker container
    ```

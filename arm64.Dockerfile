@@ -1,4 +1,4 @@
-FROM arm64v8/python:3.11-slim
+FROM --platform=linux/arm64/v8 arm64v8/python:3.11-slim
 
 LABEL org.opencontainers.image.source="https://github.com/ducky4life/Ducktube"
 
